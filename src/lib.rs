@@ -8,6 +8,10 @@ extern "C" {
 }
 
 #[wasm_bindgen]
-pub fn say_hello_from_rust() {
-    log("hello from rust");
+pub fn update(_time: f32, _height: f32, _width: f32) -> Result<(), JsValue> {
+    Ok(())
+}
+
+#[wasm_bindgen]
+pub fn render() {
 }
